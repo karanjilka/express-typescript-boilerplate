@@ -1,0 +1,10 @@
+#pending to configure and install
+- https://github.com/winstonjs/winston (for logging)
+- jest (test framework)
+- typeorm
+- OpenAPi
+- data validation package (joi or express-validator)
+- passport
+- reusable crud
+- seeding https://github.com/marak/Faker.js/
+-
