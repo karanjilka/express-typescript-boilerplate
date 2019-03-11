@@ -5,7 +5,18 @@
   ],
   "jsRules": {},
   "rules": {
-    "trailing-comma": [ false ]
+    "trailing-comma": [ false ],
+    "member-access": false,
+    "member-ordering": false,
+    "no-console": false,
+    "no-implicit-dependencies": false,
+    "no-require-imports": true,
+    "no-submodule-imports": false,
+    "no-trailing-whitespace": false,
+    "no-var-requires": true,
+    "no-empty": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
   },
   "rulesDirectory": []
 }
