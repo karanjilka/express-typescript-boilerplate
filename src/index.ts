@@ -5,8 +5,7 @@ import * as bodyParser from "body-parser";
 import {appRoutes} from "./route";
 import {check, validationResult} from "express-validator/check";
 import {Response} from "express-serve-static-core";
-import models from "./models";
-// import {DataTypes, Sequelize} from "sequelize";
+import models from "./models/index";
 
 // initialize configuration
 dotenv.config();
@@ -19,35 +18,6 @@ app.use(bodyParser.urlencoded({
 }));
 
 models.sequelize.sync();
-/*const sequelize = new Sequelize({
-    database: "testexp",
-    username: "root",
-    password: null,
-    dialect: "mysql"
-});
-
-sequelize.sync({force: true});
-
-sequelize
-    .authenticate()
-    .then(() => {
-
-    })
-    .catch((err) => {
-        console.error("Unable to connect to the database:", err);
-    });
-
-const User = sequelize.define("user", {
-    firstName: {
-        type: DataTypes.STRING
-    },
-    lastName: {
-        type: DataTypes.STRING
-    },
-    city: {
-        type: DataTypes.STRING
-    }
-});*/
 
 // Configure Express to use EJS
 app.set("views", path.join(__dirname, "views"));

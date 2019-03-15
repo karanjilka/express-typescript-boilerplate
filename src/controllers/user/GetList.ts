@@ -1,5 +1,5 @@
 import {BaseAction} from "../BaseAction";
-import models from "../../models";
+import models from "../../models/index";
 
 export class GetList extends BaseAction {
     test: any;
