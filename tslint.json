@@ -3,7 +3,10 @@
   "extends": [
     "tslint:recommended"
   ],
-  "jsRules": {},
+  "jsRules": {
+    "object-literal-sort-keys": false,
+    "no-console": false
+  },
   "rules": {
     "trailing-comma": [ false ],
     "member-access": false,
